@@ -1,5 +1,7 @@
 package oop_00000139045_VaurollaAzzahra_week01
 
+fun calculateStatus(score: Int) = if (score > 75) "Lulus" else "Tidak Lulus"
+
 fun main() {
     //REFACTOR: Gunakan val dan hapus tipe data eksplisit
     val name: String = "John Thor"
@@ -16,4 +18,6 @@ fun main() {
     }
 
     println("Grade: $grade")
+
+    println ("Status: ${calculateStatus(score)}")
 }
