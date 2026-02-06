@@ -14,8 +14,13 @@ fun main(args: Array<String>) {
     // Output Concatenation
     println("Radius: $radius, Area: $area")
 
-    // Logic check
-    checkSize(area)
+    val grade = when (score) {
+        in 90 ..100 -> "A"
+        in 80 ..89 -> "B"
+        in 70 ..79 -> "C"
+        else -> "D"
+    }
+    println("Grade kamu: $grade")
 }
 
 fun checkSize(area: Double) {
