@@ -5,9 +5,13 @@ fun calculateDiscount(price: Int): Int =
     else price * 90 / 100
 
 fun printReceipt(title: String, finalPrice: Int){
+
+    val userNote: String? = null
+
     println("===== STRUK PEMBELIAN GAME =====")
     println("Judul Game: $title")
     println("Total Harga: $finalPrice")
+    println("Catatan : ${userNote ?: "Tidak ada catatan"}")
 }
 
 fun main () {
