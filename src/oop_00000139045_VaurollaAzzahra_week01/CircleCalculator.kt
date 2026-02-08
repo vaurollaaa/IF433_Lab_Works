@@ -1,26 +1,19 @@
-package oop_00000139045_VaurollaAzzahra_week01
-
 package oop_001.johnthor.week01
 
 fun main(args: Array<String>) {
 
     // Variable definition
-    val radius = 7.0
-    val pi = 3.14
+    var radius: Double = 7.0
+    var pi: Double = 3.14
 
     // Calculation
-    val area = pi * radius * radius
+    var area: Double = pi * radius * radius
 
     // Output Concatenation
-    println("Radius: $radius, Area: $area")
+    println("Radius: " + radius + ", Area: " + area)
 
-    val grade = when (score) {
-        in 90 ..100 -> "A"
-        in 80 ..89 -> "B"
-        in 70 ..79 -> "C"
-        else -> "D"
-    }
-    println("Grade kamu: $grade")
+    // Logic check
+    checkSize(area)
 }
 
 fun checkSize(area: Double) {
@@ -30,3 +23,4 @@ fun checkSize(area: Double) {
         println("This is a Small Circle")
     }
 }
+
