@@ -1,6 +1,6 @@
 package oop_00000139045_VaurollaAzzahra_week02
 
-class Student(val name: String, val nim: String, var major: String) {
+class Student(val name: String, val nim: String, var major: String, var gpa: Double = 0.0) {
     init {
         // Validasi sederhana: cek panjang NIM
         if (nim.length != 5) {
