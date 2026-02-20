@@ -21,4 +21,13 @@ fun main() {
     println("Damage: ${sword.damage}")
     println("Tier: ${sword.tier}")
 
+    println("\n=== TEST PLAYER ===")
+
+    val player = Player("Vazhraaaaa")
+
+    // println(player.xp) // HARUS ERROR
+
+    player.addXp(50)
+    player.addXp(60)
+
 }

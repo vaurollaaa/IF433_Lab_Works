@@ -8,8 +8,17 @@ class Player(val username: String) {
         get() = (xp / 100) + 1
 
     fun addXp(amount: Int) {
-        if (amount > 0) {
-            xp += amount
+        if (amount <= 0) {
+            println("XP harus positif!")
+            return
+        }
+
+        val oldLevel = level
+        xp += amount
+        val newLevel = level
+
+        if (newLevel > oldLevel) {
+            println("Level Up! Selamat $username naik ke level $newLevel")
         }
     }
 }
