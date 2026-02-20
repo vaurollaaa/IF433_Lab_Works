@@ -7,7 +7,7 @@ class Employee(val name: String) {
                 println("ERROR: Gaji tidak boleh negatif! Di-set ke 0.")
                 field = 0
             } else {
-                field =
+                field = value
             }
     }
 
