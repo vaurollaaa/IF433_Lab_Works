@@ -18,4 +18,14 @@ fun main() {
     myEV.openTrunk()    // Mewarisi dari Car
     myEV.honk()         // Mewarisi dari Car
     myEV.accelerate()   // Memanggil final override milik ElectricCar
+
+    val manager = Manager("OLLAAAAA", 20000000)
+    val developer = Developer("LALALALA", 12000000, "Kotlin")
+
+    println("\n--- Testing Employee Hierarchy ---")
+    manager.work()
+    println("Bonus Manager: Rp ${manager.calculateBonus()}")
+
+    developer.work()
+    println("Bonus Developer: Rp ${developer.calculateBonus()}")
 }
