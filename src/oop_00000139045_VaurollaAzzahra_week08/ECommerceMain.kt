@@ -23,4 +23,6 @@ fun main() {
             println("Peringatan Data Korup: ${e.message}")
         }
     }
+
+    // Eksekusi final Checkpoint 20 aman
 }
