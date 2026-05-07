@@ -10,4 +10,9 @@ class WalletRepository<T> {
     fun getAll(): List<T> {
         return items
     }
+
+    // Menambahkan fungsi pencarian sederhana dengan constraint <T: Any>
+    fun <T : Any> findItem(list: List<T>, predicate: (T) -> Boolean): T? {
+        return list.find(predicate)
+    }
 }
