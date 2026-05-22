@@ -52,6 +52,8 @@ fun main() {
     )
 
     saveTrades(simulatedTrades, "crypto_trades.csv")
+
+    File("crypto_trades.csv").appendText("CORRUPT_ID, DOGEUSDT, Hold, XX,YY\n")
 }
 
 
